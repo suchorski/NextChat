@@ -463,9 +463,9 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_TTS_ENGINE = "OpenAI-TTS";
 export const DEFAULT_TTS_ENGINES = ["OpenAI-TTS", "Edge-TTS"];
-export const DEFAULT_TTS_MODEL = "tts-1";
+export const DEFAULT_TTS_MODEL = "gpt-4o-mini-tts";
 export const DEFAULT_TTS_VOICE = "alloy";
-export const DEFAULT_TTS_MODELS = ["tts-1", "tts-1-hd"];
+export const DEFAULT_TTS_MODELS = ["gpt-4o-mini-tts", "tts-1", "tts-1-hd"];
 export const DEFAULT_TTS_VOICES = [
   "alloy",
   "echo",
@@ -488,6 +488,7 @@ export const VISION_MODEL_REGEXES = [
   /qwen2-vl/,
   /gpt-4-turbo(?!.*preview)/,
   /^dall-e-3$/,
+  /^gpt-image-1$/,
   /glm-4v/,
   /vl/i,
   /o3/,
@@ -528,6 +529,7 @@ const openaiModels = [
   "gpt-4-turbo-2024-04-09",
   "gpt-4-1106-preview",
   "dall-e-3",
+  "gpt-image-1",
   "o1-mini",
   "o1-preview",
   "o3-mini",
